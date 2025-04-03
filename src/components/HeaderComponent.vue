@@ -18,6 +18,7 @@
   background-color: coral;
   color: rgb(4, 57, 31);
   padding: 20px;
+  
   .header-title {
     margin: 0;
     margin-bottom: 30px;
