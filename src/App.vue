@@ -1,11 +1,36 @@
 <script setup>
+import { ref } from 'vue';
 import HeaderComponent from './components/HeaderComponent.vue'
-// import VariablesEvents from './components/variablesEvents.vue';
+import ListsComponent from './components/listsComponent.vue';
+
+const isDark = ref(false);
+function toggleDark() {
+  isDark.value = !isDark.value;
+}
+
 </script>
 
 <template>
   <HeaderComponent />
-  <!-- <VariablesEvents /> -->
+
+<i class="icon" @click="toggleDark">
+  {{ isDark ? "🌞" : "🌚" }}
+</i>
+  <section :class="{dark: isDark}">
+  <ListsComponent />
+  </section>
 </template>
 
-<style></style>
+<style>
+.icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+.dark {
+  background-color: darkslateblue;
+  color: white;
+}
+
+</style>
