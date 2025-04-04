@@ -32,7 +32,8 @@ const products = [
 
   <ul class="product-list">
     <li class="product-item"  v-for="product in products" :key="product.id">
-      <!-- <div v-if="product.isAvailable"> -->
+      <!-- entiendo que el index es solo si se necesita -->
+      <!-- <div v-if="product.isAvailable" un elemento dentro del v-for> -->
         <div :class="{notAvailable: !product.isAvailable}">
         <h2>{{ product.name }}</h2>
         <h3 class="price">{{ product.price }} €</h3>

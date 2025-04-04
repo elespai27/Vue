@@ -1,7 +1,9 @@
 <script setup>
 import { ref } from 'vue';
 import HeaderComponent from './components/HeaderComponent.vue'
-import ListsComponent from './components/listsComponent.vue';
+//import MovieList from './components/MovieList.vue';
+import ParentComponent from './components/parentComponent.vue';
+//mport ListsComponent from './components/listsComponent.vue';
 
 const isDark = ref(false);
 function toggleDark() {
@@ -16,9 +18,15 @@ function toggleDark() {
 <i class="icon" @click="toggleDark">
   {{ isDark ? "🌞" : "🌚" }}
 </i>
-  <section :class="{dark: isDark}">
+  <!-- <section :class="{dark: isDark}">
   <ListsComponent />
-  </section>
+  </section> -->
+
+  <ParentComponent />
+
+
+   <!-- <MovieList /> -->
+
 </template>
 
 <style>
