@@ -42,9 +42,6 @@ export const useMovieStore = defineStore('movie', () => {
     movies.value.splice(movieIndex, 1);
   }
 }
-
-
-
   return { movies,
     addNewMovie,
     deleteMovie

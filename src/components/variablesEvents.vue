@@ -68,9 +68,7 @@ function handleClick(event) {
 
 <!-- esto es CSS -->
 <style>
-.title {
-  background-color: blueviolet;
-}
+
 </style>
 
 <!-- Componentes independientes para reutilizarlos en el framework

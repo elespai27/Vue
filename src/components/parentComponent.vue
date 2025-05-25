@@ -11,7 +11,7 @@ const message = "Otro mensaje desde el padre";
 <template>
 
 <section class="parent">
-  <h3>estes es el componente parent</h3>
+  <h3>Parent Component</h3>
 
   <div class="child">
     <ChildComponent title="Texto desde el padre"

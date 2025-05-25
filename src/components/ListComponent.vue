@@ -65,7 +65,7 @@ const products = [
   }
   .product-item:hover {
     /* si el ratón pasa por encima*/
-    background-color: crimson;
+    background-color: rgb(20, 23, 220);
     cursor: pointer;
   }
 }
