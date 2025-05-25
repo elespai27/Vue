@@ -1,23 +1,22 @@
 <script setup>
-const props = defineProps({
+import { useMovieStore } from '../stores/movie';
+
+defineProps({
   movie: Object
 })
 
-const emit = defineEmits(["deleteMovie"]);
+const movieStore = useMovieStore();
 
-function emitDelete() {
-  emit("deleteMovie", props.movie.id);
 
- }
 </script>
 
 <template>
 <article class="movie-card">
-<h3>{{ props.movie.title }}</h3>
-<img :src="props.movie.img" :alt="props.movie.alt" height="100px">
+<h3>{{ movie.title }}</h3>
+<img :src="movie.img" :alt="movie.alt" height="100px">
 <div class="buttom">
-<p>Play: {{ props.movie.duration }}</p>
-<p class="trash" @click="emitDelete">🗑️</p>
+<p>Play: {{ movie.duration }}</p>
+<p class="trash" @click="movieStore.deleteMovie(movie.id)">🗑️</p>
 </div>
 </article>
 </template>
@@ -25,8 +24,8 @@ function emitDelete() {
 <style>
 
 .movie-card {
-  border: 5px solid rgb(207, 170, 5);
-  background-color: grey;
+  border: 5px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   width: 250px;
   padding: 10px;
   display: flex;

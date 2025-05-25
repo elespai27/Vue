@@ -1,13 +1,14 @@
 <script setup>
 import { ref } from 'vue';
 
-//esto es una var reactivoa que reprenta a un usuario
+//esto es una var reactiva que representa a un usuario
 const user = ref({
     username: "Vero",
     isLoggediN: true
 });
 
 </script>
+
 <template>
 <!-- <renderizaión condicional /> -->
 <section v-if="user.isLoggediN">
@@ -27,4 +28,5 @@ const user = ref({
 </template>
 
 <style>
+
 </style>

@@ -1,5 +1,5 @@
 <script setup>
-import ChildComponent from './childComponent.vue';
+import ChildComponent from './ChildComponent.vue';
 
 const message = "Otro mensaje desde el padre";
  function displayAlert(msg) {
@@ -24,7 +24,7 @@ const message = "Otro mensaje desde el padre";
      </ChildComponent>
   <!--esto es lo que se debe hacer dos punto y variable -->
   </div>
-  
+
 </section>
 
 </template>
@@ -33,13 +33,14 @@ const message = "Otro mensaje desde el padre";
 .parent {
   padding: 20px;
   margin: 10px;
-  border: 2px solid greenyellow;
+  border: 2px solid rgb(68, 0, 255);
 
 }
+
 .child {
   padding: 10px;
   margin: 10px;
-  border: 2px dashed darkorange; /*dashed es puntedado*/
+  border: 2px dashed rgb(0, 0, 0); /*dashed es puntedado*/
 
 }
 </style>

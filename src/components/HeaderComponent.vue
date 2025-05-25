@@ -6,9 +6,10 @@
   <h1>Hola a todos</h1>
   <nav>
     <ul class="nav-list">
-      <li><a href="#" class="link">Home</a></li>
-      <li><a href="#" class="link">Blog</a></li>
-      <li><a href="#" class="link">Contact Us</a></li>
+      <li><RouterLink class="link" to = "/">Home </RouterLink></li>
+      <li><RouterLink class="link" to = "/movies">Movies </RouterLink></li>
+      <li><RouterLink class="link" to = "/basics">VUE BASICS </RouterLink></li>
+
     </ul>
   </nav>
 </template>
@@ -18,7 +19,7 @@
   background-color: coral;
   color: rgb(4, 57, 31);
   padding: 20px;
-  
+
   .header-title {
     margin: 0;
     margin-bottom: 30px;
